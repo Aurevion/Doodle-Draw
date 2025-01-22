@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Box</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Draw Something!</h1>
+    <div id="wordDisplay">Loading...</div>
+
+
+    <!-- Canvas for Drawing -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Controls -->
+    <div>
+        <button id="clearButton">Clear</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
